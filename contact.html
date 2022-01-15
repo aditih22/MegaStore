@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALL PRODUCTS - RED MEGA STORE </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="container">
+    <div class="navbar">
+    <div class="logo">
+        <img src="images/logo.png" width="125px">
+    </div>
+    <nav>
+        <ul id="MenuItems">
+            <li><a href="">HOME</a></li>
+            <li><a href="">PRODUCTS</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">CONTACT</a></li>
+            <li><a href="">ACCOUNT</a></li>
+        </ul>
+    </nav>
+    <img src="images/cart.png" width="30px" height="30px">
+    <img src="images/menu.png" class="menu-icon" onclick="menuToggle()">
+    </div>
+</div>
+
+<!-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<   contact page >>>>>>>>>>>>>>>>>>>>>>>> -->
+<div class="account-page">
+    <div class="container">
+        <div class="row">
+            <div class="contact_us">
+                <img src="images/image1.png" width="100%">
+            </div>
+            <div >
+                <div>
+                    <div>
+                        <span>Contact Us</span>
+                        <hr id='Indicator_contact'>
+                    </div>
+                    <form id="RegForm">
+                        <input type="text" placeholder="Name"/>
+                        <input type="email" placeholder="email"/>
+                        <select class="country">
+                            <option >Select Country</option>
+                            <option >India</option>
+                            <option >Australia</option>
+                            <option >U.S.A</option>
+                            <option >Canada</option>
+                        </select>
+                        <br>
+                        <input class="subject"  type="text" placeholder="Write To Us"/>
+                        <button type="Submit" class="btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+ <!-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<< footer >>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+ <div class="footer">
+     <div class="container">
+         <div class="row">
+             <div class="footer-col1">
+                 <h3>Download our App</h3>
+                 <p>Download Our App for Android and ios mobile phone.</p>
+                 <div class="app-logo">
+                     <img src="images/play-store.png">
+                     <img src="images/app-store.png">
+                 </div>
+             </div>
+             <div class="footer-col2">
+                <img src="images/logo-white.png">
+                <p>Our Purpose Is To Sustainably Make the Pleasure and Benefits of Sports Accessible to the Many</p>
+            </div>
+            <div class="footer-col3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affliate</li>
+                </ul>
+            </div>
+            <div class="footer-col4">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>YouTube</li>
+                </ul>
+            </div>
+         </div>
+         <hr>
+         <p class="copyright">Copyright 2022 --- Aditi Tutorials</p>
+     </div>
+ </div>
+  <script>
+      var MenuItems = document.getElementById("MenuItems");
+      MenuItems.style.maxHeight="0px";
+      function menuToggle() {
+          if(MenuItems.style.maxHeight=="0px"){
+            MenuItems.style.maxHeight="200px";
+          }
+          else {
+            MenuItems.style.maxHeight="0px";
+          }
+      }
+  </script>
+
+</body>
+</html>
